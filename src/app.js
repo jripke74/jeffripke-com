@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000 // on server || locally
 const app = express()
 
 // Define paths for Express config
-const publicDierectoryPath = path.join(__dirname, '../public')
+const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 
@@ -18,3 +18,12 @@ hbs.registerPartials(partialsPath)
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
+app.get('', (req, res) => {
+  res.render('index', {
+    name: 'Jeff Ripke'
+  })
+})
+
+app.listen(port, () => {
+  console.log('server running at port ' + port)
+})
