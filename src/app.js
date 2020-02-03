@@ -1,3 +1,5 @@
+'use strict'
+
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
@@ -26,5 +28,5 @@ app.get('', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log('server running at port ' + port)
+  console.log(`server running at port http://localhost:${port}`)
 })
