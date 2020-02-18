@@ -1,3 +1,18 @@
+main { 
+  background: url(../img/IMG_3189.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 32rem;
+  color: #d8d8d8;
+  font-size: 1.5rem;
+}
+
+main h1 {
+  font-size: 3rem;
+}
+
 #home img {
   width: 20%;
 }
